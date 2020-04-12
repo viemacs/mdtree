@@ -1,0 +1,47 @@
+a {
+	cursor: pointer;
+	color: #23f;
+	text-decoration: none;
+}
+a:visited {
+	color: #25f;
+}
+
+ul {
+	padding-inline-start: 16px;
+}
+
+li.active {
+	color: #caf;
+}
+
+.container {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#tree {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	vertical-align: top;
+	overflow-y: scroll;
+	bottom: 0px;
+	margin: 0 0;
+	background: #fafefc;
+}
+
+#page {
+	display: inline-block;
+	width: 80%;
+	height: 100%;
+	vertical-align: top;
+	overflow-y: scroll;
+	margin: 0 0;
+	box-sizing: border-box;
+	padding: 0 10px 0 20px;
+	background: #fefefe;
+}
