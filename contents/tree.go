@@ -69,7 +69,7 @@ func linkedListItem(dirname, basename string, isDir, isActive bool) string {
 	if isActive {
 		class = `class="active"`
 	}
-	return fmt.Sprintf(`<a href="/page/%s"><li %s>%s</li></a>`, path.Join(dirname, basename), class, filename)
+	return fmt.Sprintf(`<a href="/page/%s"><li %s>%s</li></a>`, uriEncode(path.Join(dirname, basename)), class, filename)
 }
 
 func fileNameExt(filename string) (readname, ext string) {

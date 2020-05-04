@@ -9,6 +9,7 @@ import (
 )
 
 func ReadNode(urlpath string) (bs []byte) {
+	urlpath = uriDecode(urlpath)
 	filepath := path.Join(_rootDir, urlpath)
 	stat, err := os.Stat(filepath)
 	if err != nil {
